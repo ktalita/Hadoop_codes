@@ -1,0 +1,15 @@
+CREATE EXTERNAL TABLE preco_combustivel_MD(
+    REGIAO STRING,
+    PRODUTO STRING,
+    UNIDADE_DE_MEDIDA STRING,
+    PRECO_MEDIO_REVENDA FLOAT,
+    MES INT,
+    ANO INT
+)
+
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ';'
+LOCATION '/user/cloudera/banco/preco_combustivel'
+TBLPROPERTIES('skip.header.line.count'='1');
+
+select * FROM data_lake.preco_combustivel_md
