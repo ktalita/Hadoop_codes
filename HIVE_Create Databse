@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS data_lake;
+
+use data_lake;
