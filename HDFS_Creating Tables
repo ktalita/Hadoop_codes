@@ -1,0 +1,4 @@
+[cloudera@quickstart ~]$ hdfs dfs -mkdir /user/cloudera/banco/salario_minimo
+[cloudera@quickstart ~]$ hdfs dfs -mkdir /user/cloudera/banco/preco_combustivel
+[cloudera@quickstart ~]$ hdfs dfs -put SALARIO_MINIMO.csv /user/cloudera/banco/salario_minimo
+[cloudera@quickstart ~]$ hdfs dfs -put PRECO_COMBUSTIVEL.csv /user/cloudera/banco/preco_combustivel
